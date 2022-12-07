@@ -73,3 +73,18 @@ Prometheus is available at http://localhost:9090/.
 
 Grafana is available at http://localhost:3000.
 Log in as `admin` with password `admin`, a password change dialog will follow.
+
+## kubernetes ( minikube )
+
+### Prerequisites
+
+- You should only have 1 node, otherwise you'll have to enable minikube registry addon
+
+1. eval $(minikube -p minikube docker-env)
+2. docker login
+3. quarkus build -Dquarkus.container-image.build=true
+4. minikube service --all
+
+##TODO
+
+Add grafana and prometheus

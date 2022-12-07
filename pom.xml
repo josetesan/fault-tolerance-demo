@@ -17,8 +17,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <version.quarkus>999-SNAPSHOT</version.quarkus>
+        <version.quarkus>2.14.3.Final</version.quarkus>
     </properties>
+
+
+    <modules>
+        <module>stock-price</module>
+        <module>user</module>
+        <module>portfolio</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
